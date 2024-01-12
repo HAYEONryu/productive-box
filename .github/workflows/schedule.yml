@@ -1,4 +1,4 @@
-name: Update gist
+re.,name: Update gist
 on:
   repository_dispatch:
     types: [build-event]
@@ -13,6 +13,6 @@ jobs:
       - name: Update gist
         uses: maxam2017/productive-box@master
         env:
-          GH_TOKEN: ${{ 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 }}
+          GH_TOKEN: ${{ secrets.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 }}
           GIST_ID: 26801518fb6e86b3d16fd7ed445e112d
           TIMEZONE: Asia/Seoul
